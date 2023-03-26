@@ -109,7 +109,6 @@ body {
   }
   &__ref {
     color: inherit;
-    transition: all 0.2s ease-in;
     &:hover {
       opacity: 0.7;
       text-decoration: underline;
@@ -141,7 +140,6 @@ body {
     color: inherit;
     margin-bottom: 5px;
     height: 40px;
-    transition: all 0.2s ease-in;
     &:hover {
       color: #0c5e8d;
     }
@@ -149,7 +147,6 @@ body {
 
   &__img {
     max-height: 332px;
-    width: 100%;
   }
 
   &__link-more {
@@ -172,7 +169,6 @@ body {
   }
   &__title-link{
     color: inherit;
-    transition: all 0.2 ease-in;
     &:hover {
       opacity: 0.7;
       text-decoration: underline;
@@ -207,7 +203,6 @@ body {
     color: inherit;
     font-size: 20px;
     font-weight: 700;
-    transition: all 0.2 ease-in;
     &:hover {
       opacity: 0.7;
       text-decoration: underline;
@@ -244,7 +239,6 @@ body {
     color: #fff;
     font-weight: 500;
     margin-top: 10px;
-    transition: all 0.2 ease-in;
     &:hover {
       opacity: 0.7;
       text-decoration: underline;
@@ -281,6 +275,9 @@ body {
 
 //ADAPTIVE
 @media(max-width:768px){
+  .container{
+    padding: 0 5px;
+  }
   //HOME PAGE
   .header__title {
     margin-top: 10px;
@@ -310,6 +307,7 @@ body {
   }
   .blog__img{
     max-height: 100%;
+    width: 100%;
   }
 
   //BLOG
@@ -320,6 +318,10 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px 20px;
+  }
+  .blogs__img{
+    max-height: 100%;
+    width: 100%;
   }
 
 
